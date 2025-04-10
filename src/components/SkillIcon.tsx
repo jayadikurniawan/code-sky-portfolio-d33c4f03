@@ -1,5 +1,5 @@
 
-import { Html, Css, FileCode2, Database, BarChart3, LineChart, Figma } from "lucide-react";
+import { Code2, FileCode, Database, BarChart3, LineChart, Figma } from "lucide-react";
 
 interface SkillIconProps {
   name: string;
@@ -9,11 +9,11 @@ const SkillIcon = ({ name }: SkillIconProps) => {
   const renderIcon = () => {
     switch (name.toLowerCase()) {
       case "html":
-        return <Html className="w-8 h-8 text-[#E44D26]" />;
+        return <Code2 className="w-8 h-8 text-[#E44D26]" />;
       case "css":
-        return <Css className="w-8 h-8 text-[#1572B6]" />;
+        return <FileCode className="w-8 h-8 text-[#1572B6]" />;
       case "javascript":
-        return <FileCode2 className="w-8 h-8 text-[#F7DF1E]" />;
+        return <FileCode className="w-8 h-8 text-[#F7DF1E]" />;
       case "python":
         return (
           <div className="flex items-center justify-center w-8 h-8 bg-[#3776AB] text-white rounded-sm">
