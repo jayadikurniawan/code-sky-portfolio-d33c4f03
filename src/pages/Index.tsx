@@ -42,7 +42,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-skyblue/20 to-skyblue/5 backdrop-blur-sm p-1">
                     <img 
-                      src="/lovable-uploads/d33934a9-0a26-4b23-9846-46fc0142d353.png" 
+                      src="/lovable-uploads/mukabisma.png" 
                       alt="Profile" 
                       className="w-full h-full object-cover rounded-full"
                     />

@@ -40,7 +40,7 @@ const AboutPage = () => {
               <div className="animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
                 <div className="relative rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1527427333345-ff1c47ede0a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                    src="/lovable-uploads/mukabisma.png" 
                     alt="Aviation enthusiast" 
                     className="w-full h-full object-cover rounded-lg"
                   />
