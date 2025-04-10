@@ -45,14 +45,24 @@
   }
 
   /* Updated section title styling for consistency */
-  .section-title {
+  /* .section-title {
     @apply text-3xl font-bold mb-6 text-gray-800 relative inline-block;
   }
 
   .section-title::after {
     content: '';
     @apply absolute -bottom-2 left-0 h-1 w-1/2 bg-skyblue rounded-full;
+  } */
+
+  .section-title {
+    @apply text-3xl font-bold mb-6 text-gray-800 relative inline-block;
   }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute -bottom-2 left-1/2 h-1 w-1/2 bg-skyblue rounded-full transform -translate-x-1/2;
+  }
+  
 
   .aviation-bg {
     background-image: radial-gradient(circle at 50% 50%, rgba(179, 229, 252, 0.2) 0%, rgba(255, 255, 255, 0) 60%),
