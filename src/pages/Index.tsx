@@ -1,10 +1,12 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { projects } from "./ProjectsPage";
 
 const Index = () => {
+  const featuredProjects = projects.slice(0, 3);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -66,68 +68,27 @@ const Index = () => {
             <h2 className="section-title mb-12 text-center">Featured Projects</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Featured Project 1 */}
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover animate-fade-in opacity-0" style={{ animationDelay: '0.3s' }}>
-                <div className="h-48 bg-gray-200">
-                  <img 
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                    alt="Airline Data Scraper" 
-                    className="w-full h-full object-cover"
-                  />
+              {featuredProjects.map((project) => (
+                <div key={project.id} className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover animate-fade-in opacity-0" style={{ animationDelay: `${0.3 + (project.id * 0.1)}s` }}>
+                  <div className="h-48 bg-gray-200">
+                    <img 
+                      src={project.image} 
+                      alt={project.title} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
+                    <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                    <Link 
+                      to={`/projects/${project.id}`} 
+                      className="text-skyblue hover:text-skyblue-dark font-medium text-sm inline-flex items-center gap-1"
+                    >
+                      View Details <ArrowRight size={16} />
+                    </Link>
+                  </div>
                 </div>
-                <div className="p-5">
-                  <h3 className="font-semibold text-lg mb-2">Airline Data Scraper</h3>
-                  <p className="text-gray-600 text-sm mb-4">Web scraper for gathering ticket price data from airlines</p>
-                  <Link 
-                    to="/projects/1" 
-                    className="text-skyblue hover:text-skyblue-dark font-medium text-sm inline-flex items-center gap-1"
-                  >
-                    View Details <ArrowRight size={16} />
-                  </Link>
-                </div>
-              </div>
-              
-              {/* Featured Project 2 */}
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
-                <div className="h-48 bg-gray-200">
-                  <img 
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                    alt="Flight Metrics Dashboard" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-semibold text-lg mb-2">Flight Metrics Dashboard</h3>
-                  <p className="text-gray-600 text-sm mb-4">Visualized daily flight performance data</p>
-                  <Link 
-                    to="/projects/2" 
-                    className="text-skyblue hover:text-skyblue-dark font-medium text-sm inline-flex items-center gap-1"
-                  >
-                    View Details <ArrowRight size={16} />
-                  </Link>
-                </div>
-              </div>
-              
-              {/* Featured Project 3 */}
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 card-hover animate-fade-in opacity-0" style={{ animationDelay: '0.5s' }}>
-                <div className="h-48 bg-gray-200">
-                  <img 
-                    src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                    alt="Drone Data Logger" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-semibold text-lg mb-2">Drone Data Logger</h3>
-                  <p className="text-gray-600 text-sm mb-4">Drone flight data logging and visualization app</p>
-                  <Link 
-                    to="/projects/5" 
-                    className="text-skyblue hover:text-skyblue-dark font-medium text-sm inline-flex items-center gap-1"
-                  >
-                    View Details <ArrowRight size={16} />
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
             
             <div className="text-center mt-10">

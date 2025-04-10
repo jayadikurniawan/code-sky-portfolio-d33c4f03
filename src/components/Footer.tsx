@@ -47,10 +47,10 @@ const Footer = () => {
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-skyblue transition-colors">
                   <Github size={20} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-skyblue transition-colors">
+                <a href="https://www.linkedin.com/in/bhisma-adiyasa/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-skyblue transition-colors">
                   <Linkedin size={20} />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-skyblue transition-colors">
+                <a href="https://www.instagram.com/bhismaadiyasa/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-skyblue transition-colors">
                   <Instagram size={20} />
                 </a>
                 <a href="mailto:bhisma.adiyasa@gmail.com" className="text-gray-600 hover:text-skyblue transition-colors">

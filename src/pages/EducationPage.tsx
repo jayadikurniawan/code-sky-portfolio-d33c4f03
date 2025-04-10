@@ -7,8 +7,8 @@ const EducationPage = () => {
   const educationItems = [
     {
       title: "BSc in Informatics Engineering",
-      place: "XYZ University",
-      date: "2020 - 2024",
+      place: "Universitas Brawijaya",
+      date: "2021 - 2025",
       description: "Focused on data analysis, software engineering, and web development technologies. Graduated with honors."
     },
     {

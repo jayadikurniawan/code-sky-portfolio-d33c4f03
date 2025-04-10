@@ -73,7 +73,7 @@ const ContactPage = () => {
                       <Github size={20} />
                     </a>
                     <a 
-                      href="https://linkedin.com" 
+                      href="https://www.linkedin.com/in/bhisma-adiyasa/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="bg-gray-100 p-3 rounded-full text-gray-700 hover:bg-skyblue hover:text-white transition-all duration-300"
@@ -81,7 +81,7 @@ const ContactPage = () => {
                       <Linkedin size={20} />
                     </a>
                     <a 
-                      href="https://instagram.com" 
+                      href="https://www.instagram.com/bhismaadiyasa/" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="bg-gray-100 p-3 rounded-full text-gray-700 hover:bg-skyblue hover:text-white transition-all duration-300"
