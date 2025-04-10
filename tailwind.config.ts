@@ -132,7 +132,7 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'clouds': "url('/public/lovable-uploads/d33934a9-0a26-4b23-9846-46fc0142d353.png')",
+				'clouds': "url('/public/photo-uploads/d33934a9-0a26-4b23-9846-46fc0142d353.png')",
 			}
 		}
 	},

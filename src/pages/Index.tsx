@@ -44,14 +44,14 @@ const Index = () => {
                 <div className="relative">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-skyblue/20 to-skyblue/5 backdrop-blur-sm p-1">
                     <img 
-                      src="/lovable-uploads/mukabisma.png" 
+                      src="/photo-uploads/mukabisma.png" 
                       alt="Profile" 
                       className="w-full h-full object-cover rounded-full"
                     />
                   </div>
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center border-4 border-white animate-float">
                     <img 
-                      src="/lovable-uploads/071f3f1c-b596-41bc-a154-2a835e82576c.png" 
+                      src="/photo-uploads/071f3f1c-b596-41bc-a154-2a835e82576c.png" 
                       alt="Logo" 
                       className="w-16 h-16 object-contain"
                     />

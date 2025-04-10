@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/071f3f1c-b596-41bc-a154-2a835e82576c.png" 
+              src="/photo-uploads/071f3f1c-b596-41bc-a154-2a835e82576c.png" 
               alt="Bhisma Adiyasa Logo" 
               className="h-10 w-auto" 
             />
