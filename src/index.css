@@ -60,8 +60,9 @@
   
   .section-title::after {
     content: '';
-    @apply absolute -bottom-2 left-1/2 h-1 w-1/2 bg-skyblue rounded-full transform -translate-x-1/2;
+    @apply absolute -bottom-2 left-0 w-full h-1 bg-skyblue rounded-full;
   }
+  
   
 
   .aviation-bg {
