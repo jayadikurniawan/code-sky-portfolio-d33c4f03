@@ -101,7 +101,7 @@ const ContactPage = () => {
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 p-6 animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
                 <h2 className="text-xl font-semibold mb-6 text-gray-800 dark:text-gray-100">Send Me a Message</h2>
                 
-                <form action="https://formsubmit.co/bhisma.adiyasa@gmail.com" method="POST">
+                <form action="https://formsubmit.co/dfa3b55bc561e1c44a932fd2cb46525d" method="POST">
                   <div className="mb-4">
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                       Name
