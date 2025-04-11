@@ -10,8 +10,8 @@ const AboutPage = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <main className="flex-1 pt-24">
-        <section className="container mx-auto px-4 md:px-6 py-16">
+      <main className="flex-1 pt-16">
+        <section className="container mx-auto px-4 md:px-6 py-10">
           <div className="max-w-4xl mx-auto">
             <h1 className="section-title mb-12 text-center">About Me</h1>
             
