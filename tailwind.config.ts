@@ -67,7 +67,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				skyblue: {
-					DEFAULT: '#33C3F0',
+					DEFAULT: '#3A59D1',
 					light: '#B3E5FC',
 					dark: '#0FA0CE',
 				},

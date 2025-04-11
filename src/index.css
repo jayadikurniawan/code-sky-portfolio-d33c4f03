@@ -104,7 +104,7 @@
     position: absolute;
     height: 1px;
     width: 100%;
-    background: linear-gradient(90deg, transparent, #33C3F0, transparent);
+    background: linear-gradient(90deg, transparent, #3A59D1, transparent);
     opacity: 0.5;
   }
 
@@ -120,7 +120,7 @@
   .flight-path::before {
     content: '';
     position: absolute;
-    background: linear-gradient(90deg, transparent, #33C3F0, transparent);
+    background: linear-gradient(90deg, transparent, #3A59D1, transparent);
     height: 1px;
     width: 0;
     transition: width 1s ease-in-out;
@@ -167,7 +167,7 @@
     left: 0;
     transform: rotate(45deg);
     font-size: 0.8rem;
-    color: #33C3F0;
+    color: #3A59D1;
   }
 
   .dark .airplane-bullet::before {
