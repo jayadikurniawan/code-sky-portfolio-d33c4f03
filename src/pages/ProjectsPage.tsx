@@ -24,10 +24,10 @@ const ProjectsPage = () => {
   );
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col dark:bg-gray-900">
       <Navbar />
       
-      <main className="flex-1 pt-16">
+      <main className="flex-1 pt-12">
         <section className="container mx-auto px-4 md:px-6 py-10">
           <h1 className="section-title mb-12 text-center">Projects</h1>
           
@@ -38,7 +38,7 @@ const ProjectsPage = () => {
               className={`px-4 py-2 text-sm rounded-full transition-all ${
                 filter === "all" 
                 ? "bg-skyblue text-white" 
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
               }`}
             >
               All Projects
@@ -51,7 +51,7 @@ const ProjectsPage = () => {
                 className={`px-4 py-2 text-sm rounded-full transition-all capitalize ${
                   filter === tool
                   ? "bg-skyblue text-white" 
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
                 }`}
               >
                 {tool}
@@ -69,8 +69,8 @@ const ProjectsPage = () => {
           {/* Empty State */}
           {filteredProjects.length === 0 && (
             <div className="text-center py-16">
-              <h3 className="text-xl font-semibold text-gray-700">No projects found</h3>
-              <p className="text-gray-500 mt-2">Try selecting a different filter</p>
+              <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300">No projects found</h3>
+              <p className="text-gray-500 dark:text-gray-400 mt-2">Try selecting a different filter</p>
               <button 
                 onClick={() => setFilter("all")}
                 className="mt-4 button-outline"

@@ -96,10 +96,10 @@ const ProjectDetailPage = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col dark:bg-gray-900">
         <Navbar />
         <div className="flex-1 flex items-center justify-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-skyblue"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-skyblue dark:border-skyblue-light"></div>
         </div>
         <Footer />
       </div>
@@ -108,12 +108,12 @@ const ProjectDetailPage = () => {
 
   if (!project) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col dark:bg-gray-900">
         <Navbar />
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Project Not Found</h2>
-            <p className="text-gray-600 mb-6">The project you're looking for doesn't exist or has been removed.</p>
+            <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Project Not Found</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">The project you're looking for doesn't exist or has been removed.</p>
             <Link to="/projects" className="button-primary">
               <ArrowLeft size={16} className="inline mr-2" /> Back to Projects
             </Link>
@@ -125,17 +125,17 @@ const ProjectDetailPage = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col dark:bg-gray-900">
       <Navbar />
       
-      <main className="flex-1 pt-24">
+      <main className="flex-1 pt-20">
         <section className="container mx-auto px-4 md:px-6 py-16">
           <div className="max-w-4xl mx-auto">
-            <Link to="/projects" className="text-skyblue hover:text-skyblue-dark font-medium inline-flex items-center mb-8 transition-colors">
+            <Link to="/projects" className="text-skyblue dark:text-skyblue-light hover:text-skyblue-dark font-medium inline-flex items-center mb-8 transition-colors">
               <ArrowLeft size={16} className="mr-2" /> Back to Projects
             </Link>
             
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 mb-8 animate-fade-in opacity-0">
+            <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 mb-8 animate-fade-in opacity-0">
               <img 
                 src={project.image} 
                 alt={project.title} 
@@ -144,20 +144,20 @@ const ProjectDetailPage = () => {
             </div>
             
             <div className="animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
-              <h1 className="text-3xl font-bold text-gray-800 mb-4">{project.title}</h1>
+              <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">{project.title}</h1>
               
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tools.map((tool, index) => (
                   <span 
                     key={index} 
-                    className="text-sm px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+                    className="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full"
                   >
                     {tool}
                   </span>
                 ))}
               </div>
               
-              <div className="prose max-w-none text-gray-600 mb-8">
+              <div className="prose max-w-none text-gray-600 dark:text-gray-300 mb-8">
                 <p className="text-lg font-medium mb-4">{project.description}</p>
                 {project.details && project.details.split('\n\n').map((paragraph, index) => (
                   <p key={index} className="mb-4">{paragraph}</p>
@@ -166,7 +166,7 @@ const ProjectDetailPage = () => {
               
               {project.demo && (
                 <div className="mb-8">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Demo</h3>
+                  <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Demo</h3>
                   <a 
                     href={project.demo} 
                     target="_blank" 
