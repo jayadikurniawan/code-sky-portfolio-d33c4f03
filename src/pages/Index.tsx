@@ -51,7 +51,7 @@ const Index = () => {
                   </div>
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center border-4 border-white animate-float">
                     <img 
-                      src="/photo-uploads/071f3f1c-b596-41bc-a154-2a835e82576c.png" 
+                      src="/photo-uploads/logobisma.png" 
                       alt="Logo" 
                       className="w-16 h-16 object-contain"
                     />

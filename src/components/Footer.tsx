@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center mb-4">
               <img 
-                src="/photo-uploads/071f3f1c-b596-41bc-a154-2a835e82576c.png" 
+                src="/photo-uploads/logobisma.png" 
                 alt="Bhisma Adiyasa Logo" 
                 className="h-10 w-auto" 
               />
