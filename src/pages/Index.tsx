@@ -20,7 +20,7 @@ const Index = () => {
           </div>
           
           <div className="container mx-auto px-4 md:px-6 py-20 md:py-32">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-10">
               <div className="order-2 md:order-1 animate-fade-in opacity-0" style={{ animationDelay: '0.2s' }}>
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
                   Bhisma Adiyasa
@@ -41,7 +41,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="order-1 md:order-2 flex justify-center md:justify-end pr-0 md:pr-4 lg:pr-0 animate-fade-in opacity-0">
+              <div className="order-1 md:order-2 flex justify-center md:justify-start md:pl-8 animate-fade-in opacity-0">
                 <div className="relative md:mr-8 lg:mr-12">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-skyblue/20 to-skyblue/5 dark:from-skyblue/10 dark:to-skyblue/5 backdrop-blur-sm p-1">
                     <img 
