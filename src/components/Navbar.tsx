@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 backdrop-blur-sm shadow-md py-2" : "bg-transparent py-4"
+        scrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -50,32 +51,34 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 className={`text-sm font-medium transition-all duration-300 hover:text-skyblue relative ${
                   isActive(item.path)
-                    ? "text-skyblue"
-                    : "text-gray-700"
+                    ? "text-skyblue dark:text-skyblue-light"
+                    : "text-gray-700 dark:text-gray-200"
                 }`}
               >
                 <span className="relative">
                   {item.title}
                   {isActive(item.path) && (
-                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-skyblue rounded-full" />
+                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-skyblue dark:bg-skyblue-light rounded-full" />
                   )}
                 </span>
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-4">
+            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-skyblue transition-colors duration-300"
+              className="text-gray-700 dark:text-gray-200 hover:text-skyblue dark:hover:text-skyblue-light transition-colors duration-300"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -85,7 +88,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg">
           <div className="flex flex-col py-4 px-6 space-y-4">
             {navItems.map((item) => (
               <Link
@@ -93,7 +96,7 @@ const Navbar = () => {
                 to={item.path}
                 onClick={() => setIsOpen(false)}
                 className={`py-2 text-base font-medium transition-all duration-300 hover:text-skyblue ${
-                  isActive(item.path) ? "text-skyblue" : "text-gray-700"
+                  isActive(item.path) ? "text-skyblue dark:text-skyblue-light" : "text-gray-700 dark:text-gray-200"
                 }`}
               >
                 {item.title}
