@@ -1,4 +1,4 @@
-# 🌐 Bhisma Adiyasa - Portfolio Website
+# 🌐 Portfolio Website
 
 Selamat datang di repository portfolio resmi untuk client Bhisma Adiyasa.  
 Website ini dibangun dengan fokus pada _clean design_, _modern UI_, dan pengalaman pengguna yang interaktif.
@@ -38,3 +38,8 @@ Website ini dibangun dengan fokus pada _clean design_, _modern UI_, dan pengalam
 
 Proyek ini menggunakan lisensi pribadi.
 Silakan hubungi pemilik jika ingin menggunakan sebagian/seluruh bagian dari project ini.
+
+Dibuat oleh
+Jayadi Kurniawan
+📧 jayadikurniawan27@gmail.com
+🌐 jayadikurniawan.com
