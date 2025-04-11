@@ -9,7 +9,7 @@ const Index = () => {
   const featuredProjects = projects.slice(0, 3);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col dark:bg-gray-900">
       <Navbar />
       
       <main className="flex-1">
@@ -41,8 +41,8 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="order-1 md:order-2 flex justify-center md:justify-end animate-fade-in opacity-0">
-                <div className="relative">
+              <div className="order-1 md:order-2 flex justify-center md:justify-end pr-0 md:pr-4 lg:pr-0 animate-fade-in opacity-0">
+                <div className="relative md:mr-8 lg:mr-12">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-skyblue/20 to-skyblue/5 dark:from-skyblue/10 dark:to-skyblue/5 backdrop-blur-sm p-1">
                     <img 
                       src="/photo-uploads/mukabisma.png" 
@@ -64,7 +64,7 @@ const Index = () => {
         </section>
         
         {/* Featured Section */}
-        <section className="py-16 bg-gray-50 dark:bg-gray-800">
+        <section className="py-16 bg-gray-50 dark:bg-gray-800/80">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="section-title mb-12 text-center">Featured Projects</h2>
             

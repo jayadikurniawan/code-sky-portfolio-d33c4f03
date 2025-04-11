@@ -31,7 +31,7 @@ const ThemeToggle = () => {
       aria-label="Toggle dark mode"
       pressed={theme === "dark"}
       onPressedChange={toggleTheme}
-      className="text-gray-700 dark:text-gray-300 hover:text-skyblue dark:hover:text-skyblue-light"
+      className="text-gray-700 dark:text-gray-300 hover:text-skyblue dark:hover:text-skyblue-light transition-colors"
     >
       {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
     </Toggle>

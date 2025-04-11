@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-md py-2" : "bg-transparent py-4"
+        scrolled ? "bg-white/90 dark:bg-gray-900/95 backdrop-blur-sm shadow-md py-2" : "bg-transparent dark:bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -88,7 +88,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg">
+        <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg border-t border-gray-100 dark:border-gray-800">
           <div className="flex flex-col py-4 px-6 space-y-4">
             {navItems.map((item) => (
               <Link
