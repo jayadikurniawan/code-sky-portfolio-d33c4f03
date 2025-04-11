@@ -34,3 +34,7 @@ Website ini dibangun dengan fokus pada _clean design_, _modern UI_, dan pengalam
 - `/contact` - Kontak
 
 ---
+
+
+Proyek ini menggunakan lisensi pribadi.
+Silakan hubungi pemilik jika ingin menggunakan sebagian/seluruh bagian dari project ini.
