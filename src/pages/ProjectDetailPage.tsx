@@ -36,7 +36,7 @@ const ProjectDetailPage = () => {
         id: 3,
         title: "Passenger Behavior Analysis",
         description: "Transaction-based passenger behavior dashboard.",
-        image: "https://images.unsplash.com/photo-1524669925868-dded3d5a847b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         tools: ["Python", "Streamlit"],
         demo: "#",
         details: "A data analysis tool that examines passenger booking patterns, preferences, and behaviors based on transaction data. The application presents insights through an interactive Streamlit dashboard with filtering capabilities. The analysis includes booking timing patterns, seat preferences, ancillary service purchases, and loyalty program utilization."
@@ -63,7 +63,7 @@ const ProjectDetailPage = () => {
         id: 6,
         title: "Weather Data Integration",
         description: "Realtime weather data integration for flight monitoring systems.",
-        image: "https://images.unsplash.com/photo-1506115694541-71f4c45671f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         tools: ["Node.js", "REST API"],
         demo: "#",
         details: "An API integration service that connects to multiple weather data providers and standardizes the data for use in flight monitoring systems. The service includes caching mechanisms and fallback options to ensure consistent data availability even when primary sources are unavailable. Weather data is critical for flight operations, and this integration provides a reliable, consistent source of information."

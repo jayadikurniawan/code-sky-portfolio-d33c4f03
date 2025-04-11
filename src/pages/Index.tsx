@@ -1,11 +1,37 @@
-
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { projects } from "./ProjectsPage";
+import ThemeToggle from "../components/ui/ThemeToggle";
 
 const Index = () => {
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  useEffect(() => {
+    // Cek theme dari localStorage atau preferensi browser
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark" || (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+
+    const handleThemeChange = () => {
+      const htmlTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+      setTheme(htmlTheme as "light" | "dark");
+    };
+
+    const observer = new MutationObserver(handleThemeChange);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"]
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   const featuredProjects = projects.slice(0, 3);
 
   return (
@@ -52,7 +78,7 @@ const Index = () => {
                   </div>
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-white dark:bg-gray-800 rounded-full shadow-lg flex items-center justify-center border-4 border-white dark:border-gray-800 animate-float">
                     <img 
-                      src="/photo-uploads/logobisma.png" 
+                      src={theme === "dark" ? "/photo-uploads/logobismadark.png" : "/photo-uploads/logobisma.png"} 
                       alt="Logo" 
                       className="w-16 h-16 object-contain"
                     />
