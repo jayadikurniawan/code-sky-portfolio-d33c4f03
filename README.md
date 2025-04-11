@@ -35,11 +35,15 @@ Website ini dibangun dengan fokus pada _clean design_, _modern UI_, dan pengalam
 
 ---
 
+## Lisensi
 
-Proyek ini menggunakan lisensi pribadi.
-Silakan hubungi pemilik jika ingin menggunakan sebagian/seluruh bagian dari project ini.
+Proyek ini menggunakan **lisensi pribadi**.  
+Silakan hubungi pemilik jika ingin menggunakan sebagian atau seluruh bagian dari proyek ini.
 
-Dibuat oleh
-Jayadi Kurniawan
-📧 jayadikurniawan27@gmail.com
-🌐 jayadikurniawan.com
+---
+
+### Dibuat oleh
+
+**Jayadi Kurniawan**  
+📧 [jayadikurniawan27@gmail.com](mailto:jayadikurniawan27@gmail.com)  
+🌐 [jayadikurniawan.com](https://jayadikurniawan.com)
