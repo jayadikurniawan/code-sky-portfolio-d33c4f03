@@ -7,6 +7,7 @@ import ThemeToggle from "./ThemeToggle";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [theme, setTheme] = useState<"light" | "dark">("light");
   const location = useLocation();
 
   useEffect(() => {
@@ -18,8 +19,34 @@ const Navbar = () => {
       }
     };
 
+    // Check theme from localStorage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark" || 
+      (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Add event listener for theme changes
+  useEffect(() => {
+    const handleThemeChange = () => {
+      const htmlTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+      setTheme(htmlTheme as "light" | "dark");
+    };
+
+    // Set up a MutationObserver to watch for class changes on the html element
+    const observer = new MutationObserver(handleThemeChange);
+    observer.observe(document.documentElement, { 
+      attributes: true, 
+      attributeFilter: ['class'] 
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   const navItems = [
@@ -44,7 +71,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/photo-uploads/logobisma.png" 
+              src={theme === "dark" ? "/photo-uploads/logobismadark.png" : "/photo-uploads/logobisma.png"} 
               alt="Bhisma Adiyasa Logo" 
               className="h-10 w-auto" 
             />

@@ -173,4 +173,51 @@
   .dark .airplane-bullet::before {
     color: #B3E5FC;
   }
+
+  /* Project card dark mode */
+  .dark .bg-white {
+    @apply bg-gray-800;
+  }
+
+  .dark .text-gray-800 {
+    @apply text-gray-100;
+  }
+
+  .dark .text-gray-600 {
+    @apply text-gray-300;
+  }
+
+  .dark .text-gray-700 {
+    @apply text-gray-300;
+  }
+
+  .dark .text-gray-500 {
+    @apply text-gray-400;
+  }
+
+  .dark .bg-gray-100 {
+    @apply bg-gray-700;
+  }
+
+  .dark .border-gray-100 {
+    @apply border-gray-700;
+  }
+
+  /* Timeline item dark mode */
+  .dark .timeline-item {
+    @apply border-gray-700;
+  }
+
+  /* Education page cards */
+  .education-card {
+    @apply bg-white dark:bg-gray-800 border-gray-100 dark:border-gray-700 text-gray-800 dark:text-gray-100;
+  }
+
+  .education-card p {
+    @apply text-gray-600 dark:text-gray-300;
+  }
+
+  .education-card time {
+    @apply text-gray-500 dark:text-gray-400;
+  }
 }

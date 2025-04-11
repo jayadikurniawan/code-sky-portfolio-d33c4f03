@@ -47,7 +47,7 @@ const EducationPage = () => {
       <main className="flex-1 pt-12">
         <section className="container mx-auto px-4 md:px-6 py-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="section-title mb-12 text-center">Education & Experience</h1>
+            <h1 className="section-title mb-12 text-center dark:text-gray-100">Education & Experience</h1>
             
             <div className="mb-16">
               <h2 className="text-2xl font-semibold mb-8 text-gray-800 dark:text-gray-100 flex items-center">
